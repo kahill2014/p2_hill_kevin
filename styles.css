@@ -98,7 +98,7 @@ footer > p {
 	color: #fff;
 	margin-left: 0;
 }
-aside {
+.main-overlay {
 	position: relative;
 	display: block;
 	width: 50%;
@@ -250,11 +250,11 @@ nav > ul > li > a:hover:before {
 	.nav-header {
 		font-size: 2rem;
 	}
-	aside {
+	.main-overlay {
 		width: 100%;
 		text-align: center;
 		position: absolute;
-		top: 50%;
+		top: 65%;
 		transform: translateY(-50%);
 		background-color: rgba(0, 0, 0, .5);
 		padding-bottom: 15px;
@@ -658,7 +658,7 @@ nav > ul > li > a:hover:before {
 		background-size: cover;
 		font-family: 'Open Sans', sans-serif;
 	}
-	aside {
+	.main-overlay {
 		text-align: left;
 		top: 40%;
 		background: none;
