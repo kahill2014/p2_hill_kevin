@@ -271,6 +271,64 @@ nav > ul > li > a:hover:before {
 		margin: auto;
 		font-size: .9rem;
 	}
+	.contact-internal {
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		padding: 0 10px;
+		margin-top: 2rem;
+	}
+	.contact-internal input, .contact-internal textarea {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		padding: 15px 10px;
+		border: 1px solid #6ca0d6;
+		margin: .8rem 0;
+		border-radius: 5px;
+	}
+	.contact-internal button {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		padding: 15px;
+		justify-content: center;
+		outline: 0;
+		text-transform: uppercase;
+		background: #6ca0d6;
+		width: 100%;
+		border: 0;
+		color: #FFFFFF;
+		font-size: 14px;
+		transition: .2s;
+		cursor: pointer;
+		border-radius: 5px;
+		margin-top: .8rem;
+	}
+	.contact-internal button:hover {
+		background-color: #0c5cb5;
+		color: #FFFFFF;
+	}
+	.contact h1 {
+		text-shadow: none;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		display: block;
+		margin-top: 15%;
+		font-size: 2.4rem;
+		color: #0c5cb5;
+		font-family: 'Raleway';
+		margin-bottom: 15%;
+	}
+	.contact-form {
+		padding: 30px;
+		border-radius: 5px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	}
+	.contact-form .contact-img {
+		display: none;
+	}
 }
 /***** 430px *****/
 @media screen and (min-width: 430px) {
@@ -286,6 +344,17 @@ nav > ul > li > a:hover:before {
 	}
 	.resume-section > h2 {
 		font-size: 2rem;
+	}
+}
+@media screen and (min-width: 520px) {
+	#contact-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-form {
+		align-self: center;
+		max-width: 80%;
 	}
 }
 /***** 650px *****/
@@ -319,6 +388,20 @@ nav > ul > li > a:hover:before {
 	}
 	.resume-section > article > ul {
 		margin-left: 4%;
+	}
+	#contact-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-form {
+		align-self: center;
+		max-width: 80%;
+	}
+	.contact h1 {
+		margin-top: 15%;
+		margin-bottom: 8%;
+		font-size: 3rem;
 	}
 }
 /***** 760px *****/
@@ -365,6 +448,23 @@ nav > ul > li > a:hover:before {
 	.resume-section > h2 {
 		width: 65%;
 	}
+	.contact-form {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.contact-form .contact-img {
+		display: flex;
+		flex-basis: 40%;
+		width: 100%;
+		align-self: flex-end;
+	}
+	.contact-form .contact-internal {
+		display: flex;
+		flex-basis: 60%;
+	}
+	.contact h1 {
+		margin-top: 4%;
+	}
 }
 /***** 870px *****/
 @media screen and (min-width: 870px) {
@@ -376,6 +476,14 @@ nav > ul > li > a:hover:before {
 	}
 	.resume-section > h2 {
 		width: 56%;
+	}
+	.contact-form {
+		display: flex;
+		flex-wrap: nowrap;
+		max-width: 800px;
+	}
+	.contact h1 {
+		margin-bottom: 5%;
 	}
 }
 /***** 1080px *****/
