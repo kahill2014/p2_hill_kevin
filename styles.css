@@ -329,6 +329,93 @@ nav > ul > li > a:hover:before {
 	.contact-form .contact-img {
 		display: none;
 	}
+	.center-grouping {
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+		max-width: 100%;
+		margin-top: 8%;
+		flex-wrap: wrap;
+	}
+	.round-btn {
+		display: flex;
+		flex-basis: 33%;
+		width: 30vw;
+		height: auto;
+		max-width: 300px;
+	}
+	.portfolio .banner-top {
+		display: none;
+	}
+	.portfolio h2 {
+		font-size: 1.65rem;
+		color: #0c5cb5;
+	}
+	.portfolio h3 {
+		color: #6ca0d6;
+		text-decoration: underline;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	#speech, #website, #graphic {
+		text-align: center;
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 100%;
+		margin-bottom: 3rem;
+	}
+	#speech h2 {
+		display: flex;
+		flex-basis: 100%;
+		margin-bottom: 1rem;
+		justify-content: center;
+	}
+	.speech-grouping {
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.speech-grouping .speech-excerpt-btn {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		background-color: #0c5cb5;
+		justify-content: center;
+		padding: 15px;
+		margin: 3px 0;
+		border-top: 2px solid #6ca0d6;
+		border-bottom: 2px solid #6ca0d6;
+	}
+	#website {
+		text-align: left;
+	}
+	#website h2{
+		margin-bottom: 3rem;
+	}
+	#website img {
+		max-width: 100%;
+	}
+	#website p {
+		text-align: left;
+		padding: 10px;
+	}
+	#website a {
+		color: #000;
+	}
+	#website article {
+		margin-bottom: 3rem;
+	}
+	#website ul {
+		padding: 10px;
+	}
+	#website ul > li {
+		margin-left: 1em;
+	}
 }
 /***** 430px *****/
 @media screen and (min-width: 430px) {

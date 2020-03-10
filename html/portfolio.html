@@ -5,28 +5,50 @@
 	<title>Kevin Hill | Portfolio</title>
 	<meta name="description" content="Kevin Hill Portfolio">
 	<meta name="author" content="Kevin Hill">
-	<base target="_blank">
+	<base target="_self">
 	<link rel="shortcut icon" href="../images/favicon.png" />
 
-	<!-- jQuery library -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+	<!-- Custom references -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- fancyBox -->
 	<link rel="stylesheet" href="../fancybox/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
 	<script src="../fancybox/dist/jquery.fancybox.min.js"></script>
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="../styles.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Custom references -->
-	<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/styles.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
 </head>
-<body>
-	<nav>
-		<a href="portfolio.html" target="_self">Portfolio</a>
-		<a href="resume.html" target="_self">Resume</a>
-		<a href="../index.html" class="kevin" target="_self">Kevin Hill</a>
-		<a href="https://www.upwork.com/fl/kevinhill31">Services<span>&nbsp;<img src="../images/external-link-icon.png" alt="External Link to Services on Upwork" title="External Link to Services on Upwork" /></span></a>
-		<a href="contact.html" target="_self">Contact</a>
-	</nav>
+<body class="portfolio">
+	<!-- Navigation -->
+	<header>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+		<nav class="desktop">
+			<ul>
+				<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+				<li><a href="resume.html" class="nav-link">Resume</a></li>
+			</ul>
+				<a href="../index.html" class="nav-link"><span class="nav-header">Kevin A. Hill</span></a>
+			<ul>
+				<li><a href="https://www.upwork.com/fl/kevinhill31" target="_blank">Services<span>&nbsp;<img src="../images/external-link-icon.png" alt="External Link to Services on Upwork" title="External Link to Services on Upwork" /></span></a></li>
+				<li><a href="/contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		</nav>
+		<a href="../index.html" class="nav-link header-link"><span class="nav-header">Kevin A. Hill</span></a>
+		<nav class="menu">
+			<ul>
+				<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+				<li><a href="resume.html" class="nav-link">Resume</a></li>
+				<li><a href="https://www.upwork.com/fl/kevinhill31" target="_blank">Services<span>&nbsp;<img src="../images/external-link-icon.png" alt="External Link to Services on Upwork" title="External Link to Services on Upwork" /></span></a></li>
+				<li><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 	<img class="banner-top" alt="Banner image of people in suits walking away" src="../images/portfolio-banner.jpg" />
 	<main id="portfolio">
 		<!-- Top icon buttons -->
@@ -43,101 +65,98 @@
 		</div>
 		<br />
 		<!-- Start portfolio sections -->
-		<div class="center-grouping">
-			<!-- Speech writing section -->
-			<section id="speech">
-				<h2>Speech Writing</h2>
-				<br /><hr class="no-float"/><br />
-				<div class="center-grouping">
-					<a href="../downloads/machine_bias.pdf" class="speech-excerpt-btn" data-fancybox="Machine Bias Persuasive Speech">Machine Bias</a>
-					<a href="../downloads/stop_and_spit.pdf" class="speech-excerpt-btn" data-fancybox="Stop And Spit Persuasive Speech">Stop & Spit</a>
-					<span class="row">&nbsp;</span>
-					<a href="../downloads/virtual_empathy.pdf" class="speech-excerpt-btn" data-fancybox="Virtual Empathy Informative Speech">Virtual Empathy</a>
-					<a href="../downloads/tainted_studies.pdf" class="speech-excerpt-btn" data-fancybox="Tainted Studies After Dinner Speech">Tainted Studies</a>
-				</div><br />
-				<div class="center-grouping">
-					<video style="display: block;" width="750" controls>
-						<source src="../images/pkdspeech.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div><br />
-			</section>
-			<!-- Website development section -->
-			<section id="website">
-				<h2>Website Development</h2>
-				<br /><hr class="no-float"/><br />
-				<div class="row">
-					<a href="https://www.uww.edu"><img class="float-left" src="../images/uwwedu.PNG" alt="University of Wisconsin-Whitewater website screenshot" title="University of Wisconsin-Whitewater website screenshot" /></a>
-					<br /><article class="float-left">
-						<a href="https://www.uww.edu"><h3>University of Wisconsin-Whitewater</h3></a>I am currently responsible for updating, maintaining, and creating new designs for UW-Whitewater's school website, in addition to developing the code behind those changes.
-						<br /><br />
-						Below are some additional sample pages within this website that I have helped design or update since beginning my employment at UW-Whitewater:
-						<ul>
-							<li><a href="https://www.uww.edu/library">Library</a></li>
-							<li><a href="https://www.uww.edu/cobe">College of Business and Economics</a></li>
-							<li><a href="https://www.uww.edu/search?terms=university+center">Site Search</a></li>
-							<li><a href="https://www.uww.edu/news">News</a></li>
-						</ul>
-					</article>
+		<!-- Speech writing section -->
+		<section id="speech">
+			<h2>Speech Writing</h2>
+			<div class="speech-grouping">
+				<a href="../downloads/machine_bias.pdf" class="speech-excerpt-btn" data-fancybox="Machine Bias Persuasive Speech">Machine Bias</a>
+				<a href="../downloads/stop_and_spit.pdf" class="speech-excerpt-btn" data-fancybox="Stop And Spit Persuasive Speech">Stop & Spit</a>
+				<a href="../downloads/virtual_empathy.pdf" class="speech-excerpt-btn" data-fancybox="Virtual Empathy Informative Speech">Virtual Empathy</a>
+				<a href="../downloads/tainted_studies.pdf" class="speech-excerpt-btn" data-fancybox="Tainted Studies After Dinner Speech">Tainted Studies</a>
+			</div>
+		</section>
+		<!-- Website development section -->
+		<section id="website">
+			<h2>Website Development</h2>
+			<article>
+				<a href="https://www.uww.edu"><h3>University of Wisconsin-Whitewater</h3></a>
+				<a href="https://www.uww.edu"><img src="../images/uwwedu.PNG" alt="University of Wisconsin-Whitewater website screenshot" title="University of Wisconsin-Whitewater website screenshot" /></a>
+				<p>I am currently responsible for updating, maintaining, and creating new designs for UW-Whitewater's school website, in addition to developing the code behind those changes.</p>
+				<p>Below are some additional sample pages within this website that I have helped design or update since beginning my employment at UW-Whitewater:</p>
+				<ul>
+					<li><a href="https://www.uww.edu/library">Library</a></li>
+					<li><a href="https://www.uww.edu/cobe">College of Business and Economics</a></li>
+					<li><a href="https://www.uww.edu/search?terms=university+center">Site Search</a></li>
+					<li><a href="https://www.uww.edu/news">News</a></li>
+				</ul>
+			</article>
+			<article>
+				<a href="http://www.uwwforensics.com"><h3>UW-Whitewater Forensics Team</h3></a>
+				<a href="http://www.uwwforensics.com"><img src="../images/uwwforensics.PNG" alt="UW-Whitewater Forensics website screenshot" title="UW-Whitewater Forensics website screenshot" /></a>
+				<p>As the current Co-Director of Forensics at UW-Whitewater, I have worked to build a website that increases recruitment for both the university and our competitive public speaking team.
+				Some features that I have implemented on the site since becoming a coach include:</p>
+				<ul>
+					<li>Image carousel</li>
+					<li>Contact form</li>
+					<li>Site search</li>
+					<li>Countdown timer</li>
+				</ul>
+			</article>
+			<article>
+				<a href="http://www.uwwforensics.com"><h3>UW-Whitewater Online Website</h3></a>
+				<a href="http://www.uwwforensics.com"><img src="../images/uwwonline.PNG" alt="UW-Whitewater Online website screenshot" title="UW-Whitewater Online website screenshot" /></a>
+				<p>Recently, I began working on building the brand new portion of the UW-Whitewater website dedicated to our programs that are 100% online. The design is very different from the main website,
+				which presented some exciting opportunities to improve the overall look and feel. Some updated components of the website include:</p>
+				<ul>
+					<li>Simplified navigation</li>
+					<li>More customizable header</li>
+					<li>Modern accordion dropdowns</li>
+					<li>More flexible call to actions</li>
+				</ul>
+			</article>
+		</section>
+		<!-- Graphic design section -->
+		<section id="graphic">
+			<h2>Graphic Design</h2>
+			<br /><hr class="no-float" /><br />
+
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<a href="../images/animals-full.PNG" target="_self" data-fancybox><img src="../images/animals.PNG" alt="Sample image of humane society brochure cover" title="Humane Society Booklet Cover" style="width:100%" /></a>
 				</div>
-				<br />
-				<div class="row">
-					<a href="http://www.uwwforensics.com"><img class="float-left" src="../images/uwwforensics.PNG" alt="UW-Whitewater Forensics website screenshot" title="UW-Whitewater Forensics website screenshot" /></a>
-					<br /><article class="float-left">
-						<a href="http://www.uwwforensics.com"><h3>UW-Whitewater Forensics Team</h3></a>As the current Co-Director of Forensics at UW-Whitewater, I have worked to build a website that increases recruitment for both the university and our competitive public speaking team.
-						<br /><br />
-						Some features that I have implemented on the site since becoming a coach include:
-						<ul>
-							<li>Image carousel</li>
-							<li>Contact form</li>
-							<li>Site search</li>
-							<li>Countdown timer</li>
-						</ul>
-					</article>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<a href="../images/cookbook-full.PNG" target="_self" data-fancybox><img src="../images/cookbook.PNG" alt="Sample image of Italian cookbook cover" title="Italian Cookbook Cover" style="width:100%"></a>
 				</div>
-			</section>
-			<!-- Graphic design section -->
-			<section id="graphic">
-				<h2>Graphic Design</h2>
-				<br /><hr class="no-float" /><br />
 
-				<!-- Slideshow container -->
-				<div class="slideshow-container">
-					<!-- Full-width images with number and caption text -->
-					<div class="mySlides fade">
-						<div class="numbertext">1 / 3</div>
-						<a href="../images/animals-full.PNG" target="_self" data-fancybox><img src="../images/animals.PNG" alt="Sample image of humane society brochure cover" title="Humane Society Booklet Cover" style="width:100%" /></a>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">2 / 3</div>
-						<a href="../images/cookbook-full.PNG" target="_self" data-fancybox><img src="../images/cookbook.PNG" alt="Sample image of Italian cookbook cover" title="Italian Cookbook Cover" style="width:100%"></a>
-					</div>
-
-					<div class="mySlides fade">
-						<div class="numbertext">3 / 3</div>
-						<a href="../images/progressive-full.PNG" target="_self" data-fancybox><img src="../images/progressive.PNG" alt="Sample image of single-page IT company flyer" title="Progressive IT Flyer" style="width:100%"></a>
-					</div>
-
-					<!-- Next and previous buttons -->
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<a href="../images/progressive-full.PNG" target="_self" data-fancybox><img src="../images/progressive.PNG" alt="Sample image of single-page IT company flyer" title="Progressive IT Flyer" style="width:100%"></a>
 				</div>
-				<br />
 
-				<!-- The dots/circles -->
-				<div style="text-align:center">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
-			</section>
-		</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br />
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</section>
 	</main>
-	<br /><br /><br />
+	<!-- Page sticky footer -->
 	<footer>
 		<p>&copy; Copyright 2019 &dash; Kevin Hill</p>
 	</footer>
+	<script src="../js/hamburger.js"></script>
 	<script src="../js/carousel.js"></script>
 </body>
 </html>
